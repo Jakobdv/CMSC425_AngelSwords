@@ -7,6 +7,7 @@ public class TowerGenerator : MonoBehaviour
 {
     public GameObject Tower;
     public Transform TowerSpawnPoint;
+    public int arenaRadius = 50;
     
     private float spawnTime = 15f;
     private float startTime = 1f;
@@ -27,6 +28,6 @@ public class TowerGenerator : MonoBehaviour
     {
         GameObject towerInstance;
         towerInstance = Instantiate(Tower, TowerSpawnPoint.position, TowerSpawnPoint.rotation);
-        towerInstance.transform.position = new Vector3(Random.Range(0, 10) + .5f, 0f, Random.Range(0, 10) + .5f);
+        towerInstance.transform.position = new Vector3(Random.Range(-arenaRadius, arenaRadius), 0f, Random.Range(-arenaRadius, arenaRadius));
     }
 }
