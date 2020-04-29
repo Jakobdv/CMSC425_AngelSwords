@@ -14,7 +14,8 @@ public class Laser : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        lr.SetPosition(0, transform.position);
+        //change so that it only shows the laser when the player is visible
+        lr.SetPosition(0, new Vector3(transform.position.x, transform.position.y + 1.45f, transform.position.z + .45f));
         RaycastHit hit;
         Vector3 direction = PlayerManager.instance.player.transform.position - transform.position;
 

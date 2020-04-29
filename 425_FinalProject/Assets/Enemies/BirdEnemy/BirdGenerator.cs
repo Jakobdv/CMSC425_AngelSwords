@@ -31,7 +31,7 @@ public class BirdGenerator : MonoBehaviour
         BirdSpawnPoint.rotation = Quaternion.Euler(0, 0, 0);
         BirdSpawnPoint.position = new Vector3(0,0,0);
         birdInstance = Instantiate(Bird, BirdSpawnPoint.position, BirdSpawnPoint.rotation);
-        //want to spawn on a cube
-        birdInstance.transform.position = new Vector3(Random.Range(-arenaRadius, arenaRadius), 0f, Random.Range(-arenaRadius, arenaRadius));
+        //want to spawn on a cube or just in midair?
+        birdInstance.transform.position = new Vector3(Random.Range(-arenaRadius, arenaRadius), Random.Range(0, arenaRadius), Random.Range(-arenaRadius, arenaRadius));
     }
 }
