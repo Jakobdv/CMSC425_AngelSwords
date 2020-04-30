@@ -2041,6 +2041,7 @@ GameObject:
   - component: {fileID: 13500002}
   - component: {fileID: -6288742655860893141}
   - component: {fileID: 2190380734981709455}
+  - component: {fileID: 4468434204784637846}
   m_Layer: 0
   m_Name: lb_crow
   m_TagString: lb_bird
@@ -2348,6 +2349,21 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 343c04b951c9c4093a6bc00e2a6db41d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &4468434204784637846
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 100124}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 738fd27abe52c0c468dca7b84591c2d1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  maxHealth: 50
+  deathParticle: {fileID: 5653620836582445120, guid: 0edda4316e2c66a45adfcd7597de3713,
+    type: 3}
 --- !u!1 &100126
 GameObject:
   m_ObjectHideFlags: 0

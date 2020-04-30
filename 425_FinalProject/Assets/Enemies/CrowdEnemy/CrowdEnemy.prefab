@@ -15,6 +15,7 @@ GameObject:
   - component: {fileID: 4752571102334785124}
   - component: {fileID: 4752571102334785122}
   - component: {fileID: 4752571102334785125}
+  - component: {fileID: -3980544089822196987}
   m_Layer: 0
   m_Name: CrowdEnemy
   m_TagString: Untagged
@@ -147,3 +148,18 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 14e14b55bc8724b2ab62efb8117b5405, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &-3980544089822196987
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4752571102334785051}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 738fd27abe52c0c468dca7b84591c2d1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  maxHealth: 30
+  deathParticle: {fileID: 5653620836582445120, guid: 0edda4316e2c66a45adfcd7597de3713,
+    type: 3}
